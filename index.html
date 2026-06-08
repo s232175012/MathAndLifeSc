@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math & Life Science Tutoring | Grade 10-12</title>
+  <link rel="stylesheet" href="style/style.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="nav-container">
+    <h3 class="logo">[igama leWebsite]</h3>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#topics">Subjects</a></li>
+      <li><a href="#request">Resources</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HOME / HERO -->
+<section id="home">
+  <div class="hero-content">
+    <h1>Tutoring<br><span>Math & Life Science</span></h1>
+    <p>Notes, past papers, memos + video explanations. Grade 10-12. 99.9% Pass. No signup needed.</p>
+    <a href="#request" class="btn btn-green">Find My Resources ↓</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About The Tutor</h2>
+  <div class="about-box">
+    <div class="avatar">📚</div>
+    <p>Hi, We are <strong>[Tutor Names]</strong>. We’ve been helping Grade 10-12 learners pass <strong>Mathematics & Life Science</strong> for <strong>[X] years</strong>.
+    Every note, past paper, memo + YouTube video on this site will make learners pass.
+    New resources added every week. Just pick your subject, grade and topic below.</p>
+  </div>
+</section>
+
+<!-- TOPICS / SUBJECTS -->
+<section id="topics">
+  <h2>Subjects & Topics</h2>
+
+  <!-- Subject Toggle for Topics -->
+  <div class="toggle-wrap">
+    <label class="toggle-btn">
+      <input type="radio" name="topicSubject" value="math" checked>
+      <span>📐 Mathematics</span>
+    </label>
+    <label class="toggle-btn">
+      <input type="radio" name="topicSubject" value="lifesci">
+      <span>🧬 Life Science</span>
+    </label>
+  </div>
+
+  <!-- Math Topics -->
+  <div class="grid" id="mathTopics">
+    <div class="card">
+      <div class="icon">📐</div>
+      <h3>Paper 1</h3>
+      <p>[Mr Teo Topics(All Grades)]</p>
+    </div>
+    <div class="card">
+      <div class="icon">📏</div>
+      <h3>Paper 2</h3>
+      <p>[Mr Teo Topics(All Grades)]</p>
+    </div>
+    <div class="card">
+      <div class="icon">🎯</div>
+      <h3>Exam Tips</h3>
+      <p>[For Mr Teo]</p>
+    </div>
+  </div>
+
+  <!-- Life Science Topics -->
+  <div class="grid hidden" id="lifeSciTopics">
+    <div class="card">
+      <div class="icon">🧬</div>
+      <h3>Grade 10</h3>
+      <p>[Mr Ngwenze Topics(For Grade10)]</p>
+    </div>
+    <div class="card">
+      <div class="icon">🔬</div>
+      <h3>Grade 11</h3>
+      <p>[Mr Ngwenze Topics(For Grade11)]</p>
+    </div>
+    <div class="card">
+      <div class="icon">🧪</div>
+      <h3>Grade 12</h3>
+      <p>[Mr Ngwenze Topics(For Grade12)]</p>
+    </div>
+  </div>
+</section>
+
+<!-- REQUEST FORM -->
+<section id="request">
+  <h2>Get Your Resources</h2>
+  <p class="center subtitle">Select subject + what you need. Downloads are instant.</p>
+
+  <!-- Subject Toggle -->
+  <div class="toggle-wrap">
+    <label class="toggle-btn">
+      <input type="radio" name="subjectType" value="math" checked>
+      <span>📐 Mathematics</span>
+    </label>
+    <label class="toggle-btn">
+      <input type="radio" name="subjectType" value="lifesci">
+      <span>🧬 Life Science</span>
+    </label>
+  </div>
+
+  <!-- Resource Type Toggle -->
+  <div class="toggle-wrap">
+    <label class="toggle-btn">
+      <input type="radio" name="resourceType" value="notes" checked>
+      <span>📝 Notes + Videos</span>
+    </label>
+    <label class="toggle-btn">
+      <input type="radio" name="resourceType" value="papers">
+      <span>📄 Past Papers + Memos</span>
+    </label>
+  </div>
+
+  <!-- Math Notes and Videos Form -->
+  <div class="form-box" id="mathNotesForm">
+    <form id="mathNotesVideoForm">
+      <div class="form-grid">
+        <select name="grade" required>
+          <option value="">Select Grade</option>
+          <option>Grade 10</option>
+          <option>Grade 11</option>
+          <option>Grade 12</option>
+        </select>
+
+        <select name="paper" required>
+          <option value="">Paper Number</option>
+          <option>P1</option>
+          <option>P2</option>
+        </select>
+
+        <select name="type" required>
+          <option value="">Notes or Video?</option>
+          <option>Notes</option>
+          <option>Video</option>
+        </select>
+
+        <select name="topic" required>
+          <option value="">Select Topic</option>
+          <option>Algebra</option>
+          <option>Functions</option>
+          <option>Calculus</option>
+          <option>Trigonometry</option>
+          <option>Euclidean Geometry</option>
+          <option>Analytical Geometry</option>
+          <option>Statistics</option>
+          <option>Finance</option>
+          <option>Probability</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-green btn-full">🔍 Search Math Resources</button>
+    </form>
+  </div>
+
+  <!-- Math Papers and Memos Form -->
+  <div class="form-box hidden" id="mathPapersForm">
+    <form id="mathPapersMemosForm">
+      <div class="form-grid">
+        <select name="grade" required>
+          <option value="">Select Grade</option>
+          <option>Grade 10</option>
+          <option>Grade 11</option>
+          <option>Grade 12</option>
+        </select>
+
+        <select name="paper" required>
+          <option value="">Paper Number</option>
+          <option>P1</option>
+          <option>P2</option>
+        </select>
+
+        <select name="type" required>
+          <option value="">Past Paper or Memo?</option>
+          <option>Past Paper</option>
+          <option>Memo</option>
+        </select>
+
+        <select name="term">
+          <option value="">Term</option>
+          <option>Term 1</option>
+          <option>Term 2</option>
+          <option>Term 3</option>
+          <option>Final Exam</option>
+        </select>
+
+        <input type="number" name="year" placeholder="Year e.g. 2023" min="2010" max="2026" required>
+      </div>
+      <button type="submit" class="btn btn-green btn-full">🔍 Search Math Papers</button>
+    </form>
+  </div>
+
+  <!-- Life Science Notes and Videos Form -->
+  <div class="form-box hidden" id="lifeSciNotesForm">
+    <form id="lifeSciNotesVideoForm">
+      <div class="form-grid">
+        <select name="grade" required>
+          <option value="">Select Grade</option>
+          <option>Grade 10</option>
+          <option>Grade 11</option>
+          <option>Grade 12</option>
+        </select>
+
+        <select name="type" required>
+          <option value="">Notes or Video?</option>
+          <option>Notes</option>
+          <option>Video</option>
+        </select>
+
+        <select name="topic" required>
+          <option value="">Select Topic</option>
+          <option>Cells & Tissues</option>
+          <option>Photosynthesis</option>
+          <option>Respiration</option>
+          <option>DNA & RNA</option>
+          <option>Meiosis & Mitosis</option>
+          <option>Evolution</option>
+          <option>Ecology</option>
+          <option>Homeostasis</option>
+          <option>Human Impact</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-green btn-full">🔍 Search Life Sci Resources</button>
+    </form>
+  </div>
+
+  <!-- Life Science Papers and Memos Form -->
+  <div class="form-box hidden" id="lifeSciPapersForm">
+    <form id="lifeSciPapersMemosForm">
+      <div class="form-grid">
+        <select name="grade" required>
+          <option value="">Select Grade</option>
+          <option>Grade 10</option>
+          <option>Grade 11</option>
+          <option>Grade 12</option>
+        </select>
+
+        <select name="type" required>
+          <option value="">Past Paper or Memo?</option>
+          <option>Past Paper</option>
+          <option>Memo</option>
+        </select>
+
+        <select name="term">
+          <option value="">Term</option>
+          <option>Term 1</option>
+          <option>Term 2</option>
+          <option>Term 3</option>
+          <option>Final Exam</option>
+        </select>
+
+        <input type="number" name="year" placeholder="Year e.g. 2023" min="2010" max="2026" required>
+      </div>
+      <button type="submit" class="btn btn-green btn-full">🔍 Search Life Sci Papers</button>
+    </form>
+  </div>
+
+  <div id="results"></div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Stuck on a Question?</h2>
+  <div class="center">
+    <p>WhatsApp me directly. I reply within hours during school days.</p>
+    <a href="https://wa.me/27XXXXXXXXXX?text=Hi%20I%20need%20help%20with%20Grade%20Math%20or%20Life%20Science"
+       class="btn btn-brown" target="_blank">💬 WhatsApp Tutor</a>
+  </div>
+</section>
+
+<!-- FOOTER WITH LOGO BACKGROUND -->
+<footer>
+  <div class="footer-content">
+    <p>© 2026 Math & Life Science Tutoring Site | Made with ❤️ for learners</p>
+
+    <p class="by-line">by <span class="brand-text">Teo Code</span></p>
+
+    <div class="footer-links">
+      <a href="mailto:teo@email.com">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2.9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        Email
+      </a>
+      <a href="tel:+277XXXXXXXX">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1.45 1 1V20c0.55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1.45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        Call
+      </a>
+      <a href="https://wa.me/27XXXXXXXXXX?text=Hi%20Teo" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.669-1.612-.916-2.207-.241-.579-.486-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/></svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script src="script/script.js" type="text/javascript"></script>
+</body>
+</html>
